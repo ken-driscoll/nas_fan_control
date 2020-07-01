@@ -6,7 +6,7 @@ use strict;
 use warnings;
 use 5.010;
 
-# my $config_file = '/root/nas_fan_control/config.ini';
+# my $config_file = '/data/nas_fan_control/config.ini';
 my $config_file = '/Users/kwh/sw_projects/git/nas_fan_control/PID_fan_control_config.ini';
 my $config_time = (stat($config_file))[9];
 
