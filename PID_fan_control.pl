@@ -195,7 +195,7 @@ $cpu_hd_override_temp = 65;
 $hd_fans_cool_cpu = 0;      # 1 if the hd fans should spin up to cool the cpu, 0 otherwise
 
 ## HD FAN DUTY CYCLE TO OVERRIDE CPU FANS
-$cpu_fans_cool_hd            = 1;  # 1 if the CPU fans should spin up to cool the HDs, when needed.  0 otherwise.  This may be 
+$cpu_fans_cool_hd            = 0;  # 1 if the CPU fans should spin up to cool the HDs, when needed.  0 otherwise.  This may be 
                                    #   useful if the CPU fan zone also contains chassis exit fans, as an increase in chassis exit 
                                    #   fan speed may increase the HD cooling air flow.
 $hd_cpu_override_duty_cycle = 95;  # when the HD duty cycle equals or exceeds this value, the CPU fans may be overridden to help cool HDs
@@ -238,7 +238,7 @@ $fan_duty_low          =  30;
 $hd_fan_duty_high      = 100;    # percentage on, ie 100% is full speed.
 $hd_fan_duty_med_high  =  80;
 $hd_fan_duty_med_low   =  50;
-$hd_fan_duty_low       =  16;    # some 120mm fans stall below 30.
+$hd_fan_duty_low       =  30;    # some 120mm fans stall below 30.
 #$hd_fan_duty_start    =  60;    # HD fan duty cycle when script starts - defined in config file
 
 
