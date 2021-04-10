@@ -138,7 +138,7 @@
 ## Read following config file at start and every X minutes to determine number of warmest disks to average,
 ## target average temperature and PID gains.  If file is not available, or corrupt, use defaults specified
 ## in this script.
-$config_file = '/data/nas_fan_control/PID_fan_control_config.ini';
+$config_file = '/mnt/system/scripts/nas_fan_control/PID_fan_control_config.ini';
 
 ##DEFAULT VALUES
 ## Use the values declared below if the config file is not present
@@ -153,10 +153,10 @@ $hd_fan_duty_start     = 60; # HD fan duty cycle when script starts
 ## 0 means no debugging. 1,2,3,4 provide more verbosity
 ## You should run this script in at least level 1 to verify its working correctly on your system
 $debug = 0;
-$debug_log = '/data/Debug_PID_fan_control.log';
+$debug_log = '/mnt/system/scripts/Debug_PID_fan_control.log';
 
 ## LOG
-$log = '/data/PID_fan_control.log';
+$log = '/mnt/system/scripts/PID_fan_control.log';
 $log_temp_summary_only      = 0; # 1 if not logging individual HD temperatures.  0 if logging temp of each HD
 $log_header_hourly_interval = 2; # number of hours between log headers.  Valid options are 1, 2, 3, 4, 6 & 12.
                                  # log headers will always appear at the start of a log, at midnight and any 
